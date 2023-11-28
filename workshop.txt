@@ -1,0 +1,18 @@
+https://www.oracle.com/fr/java/technologies/downloads/#jdk21-windows
+
+ajouter javac.exe variable d'environement path
+
+javac [programme]
+
+java [nom_build] //pour faire des tests
+
+// pour le .jar
+
+javac *.java
+
+jar cfm Core.jar Manifest Build.class
+
+java -jar Core.jar
+
+- info pas de itératif que de l'orienté objet
+
