@@ -7,12 +7,22 @@ class Main
     public static void main(String[] args)
     {
         System.out.println("Hello World !");
-        // call you'r methode here
+        age(args);
     }
 
     // EX01 displays an age given in args[1] if the program has no argument asking the user to enter one
     public static void age(String[] args)
     {
+        Scanner scan = new Scanner(System.in);
+        String str;
+
+        if (args.length != 1) {
+            System.out.println("give an age : ");
+            str = scan.next();
+        } else {
+            str = args[0];
+        }
+        System.out.println("you have " + str + " years old"); 
     }
 
     // EX02 Display the elements of an array with the for-each loop
