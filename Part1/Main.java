@@ -17,9 +17,11 @@ class Main
     // EX02 Display the elements of an array with the for-each loop
     public static void loop(String[] args)
     {
+        // Ex02.5: Using the do-while loop to ask the user for a positive number
     }
 
     // Ex3: creates a class and modified its values, use the class Peasant in Peopole.java;
     public static void myclass(String[] args) {
+        // EX4: call the Soldier class here:
     }
 }
