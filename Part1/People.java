@@ -35,9 +35,25 @@ class Peasant {
 // if the soldier is created with a bow he will have (30 points of damage and 60 life).
 
 class Soldier extends Peasant {
+    public Soldier(String name, int age) {
+        super(name, age);
+        this.life = 100;
+        this.attack = 15;
+        System.out.println(super.getName() + "with attack=" + this.attack + " , life=" + this.life + " is an swordman");
+    }
 
-    //if the soldier have a bow you need to display "{name} is an archer"
-    //if the soldier have a sord you need to display "{name} is a swordman"
+    public Soldier(String name, int age, String weapons) {
+        super(name, age);
+        if ("bow".equals(weapons)) {
+            this.life = 60;
+            this.attack = 30;
+            System.out.println(super.getName() + " with attack=" + this.attack + " , life=" + this.life + " is an archer");
+        }
+    }
 
-    //when the class Soldier is destroy you need to display a string like this "The Soldier: {name} retires at the age of {age}"
+    public void close() {
+        System.out.println("The Soldier:  " + super.getName() + " retires at the age of " + super.getAge());
+        super.close();
+    }
 }
+

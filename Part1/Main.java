@@ -52,7 +52,9 @@ class Main
 
     // Ex3: creates a class and modified its values, use the class Peasant in Peopole.java;
     public static void myclass(String[] args) {
-        // you need to close the class after used it
         // EX4: call the Soldier class here:
+        Soldier soldier = new Soldier("john", 20);
+        soldier.add_Age(30);
+        soldier.close();
     }
 }
