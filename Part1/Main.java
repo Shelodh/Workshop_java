@@ -7,6 +7,7 @@ class Main
     public static void main(String[] args)
     {
         System.out.println("Hello World !");
+        // call you'r methode here
     }
 
     // EX01 displays an age given in args[1] if the program has no argument asking the user to enter one
@@ -17,11 +18,12 @@ class Main
     // EX02 Display the elements of an array with the for-each loop
     public static void loop(String[] args)
     {
-        // Ex02.5: Using the do-while loop to ask the user for a positive number
+        // Ex02.5: Using the do-while loop to ask the user for a positive number if the number is negative you need to ask again.
     }
 
     // Ex3: creates a class and modified its values, use the class Peasant in Peopole.java;
     public static void myclass(String[] args) {
+        // you need to close the class after used it
         // EX4: call the Soldier class here:
     }
 }

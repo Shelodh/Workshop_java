@@ -1,6 +1,6 @@
 // for the Peasant class you need to store, a name / life / age / attack
 
-class Peasant implements AutoCloseable {
+class Peasant {
         public void close() {
     }
     //when the Peasant class is create write a string like this "A New Peasant as join the village, named : {name}, {age} year old";
