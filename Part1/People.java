@@ -1,7 +1,6 @@
 // for the Peasant class you need to store, a name / life / age / attack
-
 class Peasant {
-    Private String name;
+    private String name;
     private int age;
     protected int attack;
     protected int life;
@@ -13,11 +12,23 @@ class Peasant {
         System.out.println("A New Peasant as join the village, named : " + name + ", " + age + " year old");
     }
 
-    public void close() {
+    public int add_Age(int age) {
+        this.age += age;
+        return (this.age);
     }
-    //when the Peasant class is create write a string like this "A New Peasant as join the village, named : {name}, {age} year old";
+
+    public int getAge() {
+        return (this.age);
+    }
+
+    public String getName() {
+        return (this.name);
+    }
 
     //when the Peasant class is destroy you need to display "{name} has leave the village at {age + 5}"
+    public void close() {
+        System.out.println(name + " has leave the village at " + (age + 5));
+    }
 }
 
 // EX4 ensures that a Soldier class is created; the soldier defaults to a sword as a weapon (15 points of damage and 100 life).
