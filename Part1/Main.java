@@ -6,8 +6,9 @@ class Main
 {
     public static void main(String[] args)
     {
-        System.out.println("Hello World !");
-        age(args);
+        // System.out.println("Hello World !");
+        // age(args);
+        loop(args);
     }
 
     // EX01 displays an age given in args[1] if the program has no argument asking the user to enter one
@@ -28,7 +29,25 @@ class Main
     // EX02 Display the elements of an array with the for-each loop
     public static void loop(String[] args)
     {
+        int[] tableau = {1, 2, 3, 4, 5};
+
+        for (int element : tableau) {
+            System.out.print(element + " ");
+        }
+        System.out.println("\n");
+
         // Ex02.5: Using the do-while loop to ask the user for a positive number if the number is negative you need to ask again.
+        Scanner scanner = new Scanner(System.in);
+        int nombre;
+
+        do {
+            nombre = scanner.nextInt();
+            if (nombre <= 0) {
+                System.out.println("The number must be a positive one, Try again.");
+            }
+        } while (nombre <= 0);
+
+        System.out.println("The number is positive : " + nombre);
     }
 
     // Ex3: creates a class and modified its values, use the class Peasant in Peopole.java;
